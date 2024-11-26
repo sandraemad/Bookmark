@@ -1,0 +1,80 @@
+body {
+  background-color: #f7ecde;
+}
+h1 {
+  text-align: center;
+  position: relative;
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+
+  margin-bottom: 50px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #352e28;
+}
+h1::after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  left: 38%;
+  bottom: 10px;
+  background-color: #fec260;
+  transition: height 300ms 0s;
+  z-index: -1;
+}
+h1:hover::after {
+  height: 50%;
+}
+
+.form {
+  border-top: #352e28 2px dotted;
+  border-bottom: #352e28 2px dotted;
+}
+.btnsubmit {
+  display: block;
+  margin: auto;
+  text-align: center;
+  background-color: #d1512d;
+  color: white;
+  width: 150px;
+  cursor: pointer;
+}
+.btnsubmit:hover {
+  background-color: #a03315;
+  color: white;
+}
+.form input:focus {
+  box-shadow: none;
+  border: 1px solid #fec260;
+  outline: none !important;
+
+  box-shadow: #fec260 0px 3px 8px;
+}
+
+.bookmark-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 10px 20px;
+}
+
+.bookmark-text {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  font-weight: bolder;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  margin: 0;
+  padding: 0 10px;
+}
+.bookmark-icon-left {
+  color: #3ca55c;
+}
+.bookmark-icon-right {
+  color: #b5ac49;
+}
